@@ -1,13 +1,8 @@
 //your JS code here. If required.
-let counter = 0;
+let count = 0;
 
-document.addEventListener('DOMContentLoaded', function() {
-  const counterParagraph = document.getElementById('counter');
-  const incrementButton = document.getElementById('incrementBtn');
-
-  incrementButton.addEventListener('click', function() {
-    alert(`Current Value: ${counter}`);
-    counter++;
-    counterParagraph.textContent = counter;
-  });
+document.getElementById("incrementBtn").addEventListener("click", function() {
+    alert(count);
+    count++;
+    document.getElementById("counter").textContent = count;
 });
